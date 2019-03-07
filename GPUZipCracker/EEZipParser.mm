@@ -271,7 +271,7 @@
         return false;
     }
     
-    if ([[chosen_file uppercaseString] hasSuffix: @".ZIP"] == NO)
+    if ([[chosen_file uppercaseString] hasSuffix: @".ZIP"] == NO and [[chosen_file uppercaseString] hasSuffix: @".EPUB"] == NO)
     {
         printf("Selected file in archive (%s), doesn't appear to be a .ZIP archive. For now this program only supports decryption of ZIP archives stored within ZIP files...", lfh.file_name);
         return false;
